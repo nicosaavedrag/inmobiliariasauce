@@ -514,3 +514,29 @@ footer {
 .google-maps-api iframe {
     display: block;
 }
+
+/* Estilos específicos para la recuperación */
+.enlaces-ayuda {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.link-secundario {
+    color: var(--verde-esmeralda);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.link-secundario:hover {
+    text-decoration: underline;
+    color: var(--verde-oscuro);
+}
+
+/* Reutilizamos el diseño de tarjeta que ya definimos */
+.card-form p {
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
