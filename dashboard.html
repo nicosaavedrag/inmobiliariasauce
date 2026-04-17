@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - Sauce Inmobiliaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dashboard">
+    <header class="header-principal">
+        <div class="logo">
+            <h1>Sauce Inmobiliaria</h1>
+        </div>
+        <div class="user-info">
+            <span> Bienvenido:Admin_Sauce</span>
+            <a href="index.html" class="btn-salir">Cerrar Sesión</a>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <header class="dashboard-header">
+            <h2>Panel de Gestión General</h2>
+        </header>
+
+        <nav class="grid-modulos" aria-label="Módulos administrativos">
+            <a href="crud-usuarios.html" class="modulo-card">
+                <div class="icono">👤</div>
+                <h3>Mantenedor de Usuarios</h3>
+                <p>Gestionar Propietarios y Gestores Freelance.</p>
+            </a>
+
+            <a href="crud-propiedades.html" class="modulo-card">
+                <div class="icono">🏠</div>
+                <h3>Mantenedor de Propiedades</h3>
+                <p>Publicar, modificar o eliminar inmuebles del catálogo.</p>
+            </a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sauce Inmobiliaria - Gestión Interna</p>
+    </footer>
+</body>
+</html>

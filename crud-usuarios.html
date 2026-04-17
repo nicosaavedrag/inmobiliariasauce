@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Usuarios - Sauce Inmobiliaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dashboard">
+    <header class="header-principal">
+        <h1>Sauce - Gestión de Usuarios</h1>
+        <a href="dashboard.html" class="btn-ver-mas">Volver al Panel</a>
+    </header>
+
+    <main class="dashboard-main">
+        <section class="seccion-tabla">
+            <div class="header-tabla">
+                <h3>Listado de Usuarios</h3>
+                <button class="btn-buscar">Nuevo Usuario</button>
+            </div>
+            <table class="tabla-gestion">
+                <thead>
+                    <tr>
+                        <th>RUT</th>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12.345.678-9</td>
+                        <td>Juan Pérez</td>
+                        <td>Propietario</td>
+                        <td><span class="tag activa">Activa</span></td>
+                        <td>
+                            <button class="btn-accion edit">Editar</button>
+                            <button class="btn-accion baja">Dar de Baja</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18.765.432-1</td>
+                        <td>María López</td>
+                        <td>Gestor Free</td>
+                        <td><span class="tag pendiente">Pendiente</span></td>
+                        <td>
+                            <button class="btn-accion enable">Habilitar</button>
+                            <button class="btn-accion delete">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

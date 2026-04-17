@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauce Inmobiliaria - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-principal">
+        <div class="logo">
+            <h1>Sauce Inmobiliaria</h1>
+        </div>
+        <nav aria-label="Navegación principal de registro">
+            <ul class="nav-links">
+                <li><a href="registro-propietario.html">Registrar Propietario</a></li>
+                <li><a href="registro-gestor.html">Registrar Gestor Freelance</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="banner-promocional">
+                <h2>NUEVO PROYECTO PUERTAS DEL MAR</h2>
+                <p class="precio-destacado">$19.990.000</p>
+            </div>
+            
+            <aside class="autenticacion-panel" aria-labelledby="auth-title">
+                <h3 id="auth-title">Autenticación</h3>
+                <form action="dashboard.html" method="GET">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                    
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                    
+                    <button type="submit" class="btn-ingresar">Ingresar</button>
+                    <a href="#recuperar" class="link-recuperar">Recuperar Contraseña</a>
+                </form>
+            </aside>
+        </section>
+
+        <section class="buscador-section" aria-label="Buscador de propiedades">
+            <form class="formulario-buscador">
+                <select name="comuna" aria-label="Seleccionar Comuna">
+                    <option value="">Comuna</option>
+                    <option value="la-serena">La Serena</option>
+                    <option value="ovalle">Ovalle</option>
+                    <option value="coquimbo">Coquimbo</option>
+                </select>
+                <select name="provincia" aria-label="Seleccionar Provincia">
+                    <option value="">Provincia</option>
+                    <option value="elqui">Elqui</option>
+                    <option value="limari">Limarí</option>
+                </select>
+                <select name="sector" aria-label="Seleccionar Sector">
+                    <option value="">Sector</option>
+                    <option value="el-milagro">El Milagro</option>
+                    <option value="puertas-del-mar">Puertas del mar</option>
+                    <option value="las-companias">Las compañias</option>
+                    <option value="san-joaquin">San Joaquin</option>
+                    <option value="avenida-del-mar">Avenida del mar</option>
+                </select>
+                <button type="submit" class="btn-buscar">Buscar</button>
+            </form>
+        </section>
+
+        <section class="propiedades-grid" aria-label="Catálogo de propiedades">
+    <article class="tarjeta-propiedad">
+        <div class="imagen-contenedor">
+            <img src="img/casa-san-joaquin.jpeg" alt="Fachada de casa en El Milagro">
+        </div>
+        <div class="cuerpo-tarjeta">
+            <p class="etiqueta-tipo">Casa</p>
+            <h4 class="titulo-ubicacion">Sector El Milagro, La Serena</h4>
+            <p class="precio-texto">UF 5.650 - $200.969.031</p>
+            <a href="detalle-propiedad.html" class="btn-mockup-rojo">Ver Más</a>
+        </div>
+    </article>
+
+    <article class="tarjeta-propiedad">
+        <div class="imagen-contenedor">
+            <img src="img/departamento_avenidadelmar.jpg" alt="Departamento con vista al mar en Avenida del Mar">
+        </div>
+        <div class="cuerpo-tarjeta">
+            <p class="etiqueta-tipo">Departamento</p>
+            <h4 class="titulo-ubicacion">Sector Avenida del Mar, La Serena</h4>
+            <p class="precio-texto">UF 5.650 - $200.969.031</p>
+            <a href="detalle-propiedad.html" class="btn-mockup-rojo">Ver Más</a>
+        </div>
+    </article>
+
+    <article class="tarjeta-propiedad">
+        <div class="imagen-contenedor">
+            <img src="img/terreno.jpg" alt="Terreno en zona rural">
+        </div>
+        <div class="cuerpo-tarjeta">
+            <p class="etiqueta-tipo">Terreno</p>
+            <h4 class="titulo-ubicacion">Sector Pan de Azúcar, Coquimbo</h4>
+            <p class="precio-texto">UF 4.200 - $150.000.000</p>
+            <a href="detalle-propiedad.html" class="btn-mockup-rojo">Ver Más</a>
+        </div>
+    </article>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Todos los derechos Reservados Sauce Inmobiliaria</p>
+    </footer>
+</body>
+</html>
